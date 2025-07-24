@@ -24,6 +24,7 @@ body {
     margin-bottom: 40px;
     padding: 20px 0;
 }
+
 .nameText {
     font-size: clamp(2rem, 3vw, 3rem);
     font-family: "DynaPuff", system-ui;
