@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Graphics Gallery ~ Shlok Dalsania</title>
+    <meta name="theme-color" content="#c00000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h3 class="nameText">Shlok Dalsania</h3>
+            <h1 class="title">Graphics Gallery</h1>
+            <p class="subtitle">Collection of all my creations!</p>
+        </header>
+
+        <main class="gallery-container">
+            <!-- Edits Section -->
+            <section class="gallery-section" data-section="nature">
+                <div class="section-header">
+                    <h2 class="section-title">Edits</h2>
+                </div>
+
+                <div class="preview-grid">
+                    <div class="image-card" data-src="./img/edits/p1.png">
+                        <img src="./img/edits/p1.png" alt="Mountain landscape" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/edits/p4.jpg">
+                        <img src="./img/edits/p4.jpg" alt="Forest path" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/edits/p2.jpg">
+                        <img src="./img/edits/p2.jpg" alt="Lake reflection" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="expanded-grid" id="nature-expanded">
+                    <div class="image-card" data-src="./img/edits/p3.jpg">
+                        <img src="./img/edits/p3.jpg" alt="Desert landscape" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/edits/p5.jpg">
+                        <img src="./img/edits/p5.jpg" alt="Ocean waves" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/edits/p6.jpg">
+                        <img src="./img/edits/p6.jpg" alt="Mountain peak" loading="lazy">
+                    </div>
+                </div>
+                <div class="section-header">
+                    <button class="expand-btn" data-target="nature">
+                        <span class="expand-text">View All</span>
+                        <span class="expand-icon">+</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Clicks Section -->
+            <section class="gallery-section" data-section="urban">
+                <div class="section-header">
+                    <h2 class="section-title">Clicks</h2>
+                </div>
+
+                <div class="preview-grid">
+                    <div class="image-card" data-src="./img/clicks/p1.png">
+                        <img src="./img/clicks/p1.png" alt="City skyline" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p2.jpg">
+                        <img src="./img/clicks/p2.jpg" alt="City architecture" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p3.jpg">
+                        <img src="./img/clicks/p3.jpg" alt="Street view" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="expanded-grid" id="urban-expanded">
+                    <div class="image-card" data-src="./img/clicks/p4.jpg">
+                        <img src="./img/clicks/p4.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p5.jpg">
+                        <img src="./img/clicks/p5.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p6.jpg">
+                        <img src="./img/clicks/p6.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p7.jpg">
+                        <img src="./img/clicks/p7.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p8.jpg">
+                        <img src="./img/clicks/p8.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p9.jpg">
+                        <img src="./img/clicks/p9.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p10.jpg">
+                        <img src="./img/clicks/p10.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                    <div class="image-card" data-src="./img/clicks/p11.jpg">
+                        <img src="./img/clicks/p11.jpg" alt="Modern building" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <button class="expand-btn" data-target="urban">
+                        <span class="expand-text">View All</span>
+                        <span class="expand-icon">+</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal for expanded image view -->
+        <div class="modal" id="imageModal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <img class="modal-image" src="" alt="">
+                <div class="modal-controls">
+                    <button class="modal-nav prev-btn">‹</button>
+                    <button class="modal-nav next-btn">›</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
